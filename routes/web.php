@@ -92,7 +92,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
     Route::get('/items/delete/{user_id}', 'Admin\AdminItemsController@destroy');
     Route::get('/items/{item_id}', 'Admin\AdminItemsController@show');
 
-    Route::get('/blogs/search', 'Admin\AdminblogsController@search');
+    Route::get('/blogs/search', 'Admin\AdminBlogsController@search');
 
     Route::get('/blogs', 'Admin\AdminBlogsController@index');
     Route::get('/blogs/new', 'Admin\AdminBlogsController@new');
